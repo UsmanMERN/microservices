@@ -1,0 +1,70 @@
+1-product requirements
+2-system design 
+3- technology and infrastructure
+4- time estimation
+5-feasibility & product6-TDD & CICD
+
+1- product requirements
+
+selling portal
+
+use case of this 
+
+--> seller can sell product online
+--> buyer can buy product online
+--> transaction will take place b/w C2C
+--> A commission of % will be charged per final transaction
+--> notification or communication channel needed to collaborate buyer and saller
+
+
+seller ----> plateform <----- buyer
+
+            |
+            |
+            v
+            payemnt gateways
+
+system design
+
+functional requirements
+non-functional requirements
+data storage
+
+1--> functional requirements
+
+-->auth
+-->otp verification
+--> user can become seller / buyer
+--> seller can CRUD operation for product
+--> seller can advertize products
+--> buyer can purchase product using online payment card
+--> seller can recieve payout 
+--> email notification
+--> online chat with seller is needed
+
+2-> non-functional requirements
+
+--> system should be highly available in cloud with the multiple region beascuse this is C2C portal 
+--> system should maintain best practices to able to scale horizontally at any level 
+--> system should design the wat can be break down to microservieces
+--> loosely coupled serives and communication 
+-->  it should have mechanism for logging and monitoring to inspect servicess and healthy and avalibility 
+--> system should design with documentation for better scope of usability to undersatnd the architecture and bussiness logic of the API usages
+--> should follow CQRS 
+
+3--> data storage requirements
+
+--> should consistent or eventully consistent 
+--> should follow CAP theorem
+--> disctibuted DB highly available
+--> hight availablility of Object Storage fot multiple reqions
+
+   
+            system design
+
+// teach stack for application
+
+server --> nodejs  
+
+serverless --> aws CDK
+
